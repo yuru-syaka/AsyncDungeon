@@ -1,0 +1,16 @@
+{
+    "name": "DungeonGame.Client",
+    "rootNamespace": "DungeonGame.Client",
+    "references": [
+        "DungeonGame.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

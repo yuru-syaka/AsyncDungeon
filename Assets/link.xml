@@ -1,0 +1,5 @@
+<!-- WebGL(IL2CPP)のコード削除で、JSONの読み書きに必要な型が消えないようにする -->
+<linker>
+  <assembly fullname="DungeonGame.Core" preserve="all"/>
+  <assembly fullname="Newtonsoft.Json" preserve="all"/>
+</linker>

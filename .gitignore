@@ -1,0 +1,31 @@
+# Unity が自動で作るもの
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Bb]uild/
+/[Bb]uilds/
+/Assets/Logs/
+/Assets/Logs.meta
+
+# IDE が自動で作るもの
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 任意:Claude Code のプレビュー設定
+.claude/

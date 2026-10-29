@@ -1,0 +1,91 @@
+{
+  "CandidateCount": 3,
+  "PointsPerLayer": 10,
+  "PointValues": { "MaxHp": 6, "Attack": 2, "Defense": 1, "Speed": 1, "Magic": 2 },
+  "Skills": [
+    {
+      "Id": "power",
+      "Name": "剛腕",
+      "Description": "全員の攻撃力が20%上がる",
+      "Effects": [ { "Type": "StatPercent", "Stat": "Attack", "Value": 20 } ]
+    },
+    {
+      "Id": "iron_wall",
+      "Name": "鉄壁",
+      "Description": "全員の防御力が3上がる",
+      "Effects": [ { "Type": "StatFlat", "Stat": "Defense", "Value": 3 } ]
+    },
+    {
+      "Id": "vitality",
+      "Name": "頑健",
+      "Description": "全員の最大HPが25%上がる",
+      "Effects": [ { "Type": "StatPercent", "Stat": "MaxHp", "Value": 25 } ]
+    },
+    {
+      "Id": "swift",
+      "Name": "疾風",
+      "Description": "全員の素早さが4上がる",
+      "Effects": [ { "Type": "StatFlat", "Stat": "Speed", "Value": 4 } ]
+    },
+    {
+      "Id": "wisdom",
+      "Name": "叡智",
+      "Description": "全員の魔力が30%上がる",
+      "Effects": [ { "Type": "StatPercent", "Stat": "Magic", "Value": 30 } ]
+    },
+    {
+      "Id": "keen_eye",
+      "Name": "急所狙い",
+      "Description": "全員の会心率が15%上がる",
+      "Effects": [ { "Type": "CritBonus", "Value": 15 } ]
+    },
+    {
+      "Id": "hawk_eye",
+      "Name": "鷹の目",
+      "Description": "視界が1マス広がり、たいまつが1回増える",
+      "Effects": [
+        { "Type": "VisionBonus", "Value": 1 },
+        { "Type": "ExtraCharge", "Intervention": "Torch", "Value": 1 }
+      ]
+    },
+    {
+      "Id": "regeneration",
+      "Name": "再生",
+      "Description": "攻略中、3秒ごとにHPが3回復する",
+      "Effects": [ { "Type": "Regen", "Value": 3, "Interval": 30 } ]
+    },
+    {
+      "Id": "vampire",
+      "Name": "吸血",
+      "Description": "与えたダメージの25%だけHPを回復する",
+      "Effects": [ { "Type": "Lifesteal", "Value": 25 } ]
+    },
+    {
+      "Id": "thorns",
+      "Name": "棘の鎧",
+      "Description": "受けたダメージの40%を相手に返す",
+      "Effects": [ { "Type": "Thorns", "Value": 40 } ]
+    },
+    {
+      "Id": "rest",
+      "Name": "野営の心得",
+      "Description": "層の開始時に、全員のHPが最大の50%回復する",
+      "Effects": [ { "Type": "LayerStartHeal", "Value": 50 } ]
+    },
+    {
+      "Id": "phoenix",
+      "Name": "不死鳥の羽",
+      "Description": "層の開始時に、倒れた仲間がHP50%で復活する",
+      "Effects": [ { "Type": "Revive", "Value": 50 } ]
+    },
+    {
+      "Id": "supplies",
+      "Name": "道具袋",
+      "Description": "回復とたいまつの使用回数が1回ずつ増える",
+      "Effects": [
+        { "Type": "ExtraCharge", "Intervention": "Heal", "Value": 1 },
+        { "Type": "ExtraCharge", "Intervention": "Torch", "Value": 1 }
+      ]
+    }
+  ]
+}

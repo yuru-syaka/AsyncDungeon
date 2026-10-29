@@ -1,0 +1,103 @@
+{
+  "PartySize": 3,
+  "TestParty": ["warrior", "mage", "priest"],
+  "Interventions": {
+    "HealCharges": 3,
+    "TorchCharges": 4,
+    "HealPercent": 40,
+    "TorchRadius": 4
+  },
+  "Classes": [
+    {
+      "Id": "warrior",
+      "Name": "戦士",
+      "Description": "鍛え抜かれた体で仲間の盾となる前衛。HPと防御が高く、隊列の先頭に置くと安定する。",
+      "BaseStats": { "MaxHp": 70, "Attack": 11, "Defense": 5, "Speed": 5, "Magic": 0 },
+      "AttackStat": "Attack",
+      "AttackRange": 1,
+      "Vision": 2,
+      "CritPercent": 5,
+      "Ability": "None",
+      "AbilityInterval": 0,
+      "Color": "#E05A4A"
+    },
+    {
+      "Id": "mage",
+      "Name": "魔法使い",
+      "Description": "2マス先の敵まで魔法で焼き払う。相手の防御を半分しか受けないが、打たれ弱いので後ろに置こう。",
+      "BaseStats": { "MaxHp": 36, "Attack": 3, "Defense": 1, "Speed": 6, "Magic": 13 },
+      "AttackStat": "Magic",
+      "AttackRange": 2,
+      "Vision": 2,
+      "CritPercent": 5,
+      "Ability": "None",
+      "AbilityInterval": 0,
+      "Color": "#7A6CF0"
+    },
+    {
+      "Id": "priest",
+      "Name": "僧侶",
+      "Description": "HPが減った仲間に自動で癒やしの祈りを捧げる、パーティの要。長い冒険ほど頼りになる。",
+      "BaseStats": { "MaxHp": 46, "Attack": 6, "Defense": 3, "Speed": 5, "Magic": 9 },
+      "AttackStat": "Attack",
+      "AttackRange": 1,
+      "Vision": 2,
+      "CritPercent": 5,
+      "Ability": "Heal",
+      "AbilityInterval": 40,
+      "Color": "#F2F2F2"
+    },
+    {
+      "Id": "thief",
+      "Name": "盗賊",
+      "Description": "素早い身のこなしと鋭い目を持つ。視界が広く迷いにくい。急所を突く会心の一撃は強烈。",
+      "BaseStats": { "MaxHp": 42, "Attack": 9, "Defense": 2, "Speed": 12, "Magic": 0 },
+      "AttackStat": "Attack",
+      "AttackRange": 1,
+      "Vision": 4,
+      "CritPercent": 25,
+      "Ability": "None",
+      "AbilityInterval": 0,
+      "Color": "#3FBF8F"
+    },
+    {
+      "Id": "hunter",
+      "Name": "狩人",
+      "Description": "森で鍛えた弓の名手。3マス先の敵まで矢を射かけ、目も利くので霧の中でも迷いにくい。近づかれると脆い。",
+      "BaseStats": { "MaxHp": 40, "Attack": 9, "Defense": 2, "Speed": 8, "Magic": 0 },
+      "AttackStat": "Attack",
+      "AttackRange": 3,
+      "Vision": 3,
+      "CritPercent": 10,
+      "Ability": "None",
+      "AbilityInterval": 0,
+      "Color": "#C8A040"
+    },
+    {
+      "Id": "paladin",
+      "Name": "聖騎士",
+      "Description": "重い鎧と大盾に身を包んだ聖なる騎士。動きは遅いが、とにかく倒れにくい。祈りで仲間の傷も癒やせる。",
+      "BaseStats": { "MaxHp": 80, "Attack": 8, "Defense": 7, "Speed": 3, "Magic": 5 },
+      "AttackStat": "Attack",
+      "AttackRange": 1,
+      "Vision": 2,
+      "CritPercent": 5,
+      "Ability": "Heal",
+      "AbilityInterval": 70,
+      "Color": "#6090E0"
+    },
+    {
+      "Id": "monk",
+      "Name": "武闘家",
+      "Description": "己の拳ひとつで戦う修行者。誰よりも素早く拳を繰り出し、急所を突く会心の一撃が多い。防具はほとんど身につけない。",
+      "BaseStats": { "MaxHp": 52, "Attack": 8, "Defense": 2, "Speed": 14, "Magic": 0 },
+      "AttackStat": "Attack",
+      "AttackRange": 1,
+      "Vision": 2,
+      "CritPercent": 30,
+      "Ability": "None",
+      "AbilityInterval": 0,
+      "Color": "#E08030"
+    }
+  ]
+}
